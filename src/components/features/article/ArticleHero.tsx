@@ -65,7 +65,10 @@ export const ArticleHero = ({
         </div>
         <h1 {...inspectorProps({ fieldId: 'title' })}>{title}</h1>
         {shortDescription && (
-          <p className="mt-2" {...inspectorProps({ fieldId: 'shortDescription' })}>
+          <p
+            className="mt-2 text-base-content"
+            {...inspectorProps({ fieldId: 'shortDescription' })}
+          >
             {shortDescription}
           </p>
         )}
