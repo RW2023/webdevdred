@@ -26,8 +26,11 @@ export const ArticleImage = ({ image }: ArticleImageProps) => {
         />
       </div>
       {image.caption && (
-        <figcaption className="mt-4" {...inspectorProps({ fieldId: 'caption' })}>
-          {image.caption}
+        <figcaption
+          className="mt-4 italic text-base-300"
+          {...inspectorProps({ fieldId: 'caption' })}
+        >
+          Caption: {image.caption}
         </figcaption>
       )}
     </figure>
