@@ -9,9 +9,11 @@ export const Footer = () => {
   return (
     <footer className="footer footer-center bg-base-300 p-10 text-base-content">
       <nav className="grid grid-flow-col gap-4">
+        {/* 
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
-        <Link href="/feedback">Feedback</Link>
+        <Link href="/feedback">Feedback</Link> 
+        */}
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4 text-3xl">
@@ -32,6 +34,7 @@ export const Footer = () => {
           Copyright © 2023 - All rights reserved by
           <span> Ryan Wilson</span>
         </p>
+        <p className="text-base-content">A web developer from Ontario, Canada 🍁</p>
       </aside>
     </footer>
   );
