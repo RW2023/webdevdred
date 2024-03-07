@@ -7,22 +7,32 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="border-t-color mt-10 border-t border-gray200">
-      <Container className="py-8">
-        <h2 className="h4 mb-4">{t('footer.aboutUs')}</h2>
-        <div className="max-w-4xl">{t('footer.description')}</div>
-        <div className="mt-8">
-          {t('footer.powerBy')}{' '}
-          <Link
-            href="https://www.contentful.com"
+    <footer className="footer footer-center bg-base-300 p-10 text-base-content">
+      <nav className="grid grid-flow-col gap-4">
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/feedback">Feedback</Link>
+      </nav>
+      <nav>
+        <div className="grid grid-flow-col gap-4 text-3xl">
+          {/* GitHub */}
+          <a
+            href="https://github.com/RW2023/"
+            target="https://github.com/RW2023/"
             rel="noopener noreferrer"
-            target="_blank"
-            className="text-blue500"
+            aria-label="GitHub"
           >
-            Contentful
-          </Link>
+            <i className="fab fa-github"></i>
+            <span className="sr-only">GitHub</span>
+          </a>
         </div>
-      </Container>
+      </nav>
+      <aside>
+        <p>
+          Copyright © 2023 - All rights reserved by
+          <span> Ryan Wilson</span>
+        </p>
+      </aside>
     </footer>
   );
 };
