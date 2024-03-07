@@ -28,7 +28,7 @@ export const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>
+        <p className="text-base-content">
           Copyright © 2023 - All rights reserved by
           <span> Ryan Wilson</span>
         </p>
