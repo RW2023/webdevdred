@@ -12,19 +12,31 @@ const urbanist = Urbanist({ subsets: ['latin'], variable: '--font-urbanist' });
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { locale } = useRouter();
+
+  // This line checks if the 'noDefaultLayout' prop is true. If so, the default layout will not be used.
+  const shouldUseDefaultLayout = !pageProps.noDefaultLayout;
+
   return (
     <ContentfulLivePreviewProvider
       enableInspectorMode={pageProps.previewActive}
       enableLiveUpdates={pageProps.previewActive}
-      locale={locale || 'en-US'}>
-      <>
-        <main className={`${urbanist.variable} font-sans`}>
-          <Layout>
+      locale={locale || 'en-US'}
+    >
+      <main className={`${urbanist.variable} font-sans`}>
+        {
+          // Conditional rendering based on 'shouldUseDefaultLayout'
+          shouldUseDefaultLayout ? (
+            // If true, wrap the Component with the Layout
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          ) : (
+            // Otherwise, render the Component without the Layout
             <Component {...pageProps} />
-          </Layout>
-        </main>
-        <div id="portal" className={`${urbanist.variable} font-sans`} />
-      </>
+          )
+        }
+      </main>
+      <div id="portal" className={`${urbanist.variable} font-sans`} />
     </ContentfulLivePreviewProvider>
   );
 };
