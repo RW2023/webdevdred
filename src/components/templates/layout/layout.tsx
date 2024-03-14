@@ -11,7 +11,7 @@ export const Layout = ({ children }: LayoutPropsInterface) => {
   return (
     <>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );
