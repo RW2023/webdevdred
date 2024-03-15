@@ -7,15 +7,14 @@ type FunnelLayoutProps = {
 
 const FunnelLayout: React.FC<FunnelLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div data-theme="black">
       <Head>
         <title>Funnel Layout</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* You can add a custom header, footer, etc., here */}
-      <main className="flex flex-col items-center justify-center">{children}</main>{' '}
-      {/* Custom footer */}
+      <main>{children}</main> {/* Custom footer */}
     </div>
   );
 };
