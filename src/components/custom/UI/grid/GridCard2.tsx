@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react';
 
-import SubHeading from '../LightSubHeading';
+import SubHeading from '../SubHeading';
 
 interface Props {
   title2: string;
@@ -13,7 +13,7 @@ interface Props {
 
 const GridCard2: FC<Props> = ({ title2, content2, buttonText2, href2 }): JSX.Element => {
   return (
-    <div className="bg-base card shadow-xl">
+    <div className="card  bg-base-300 shadow-xl">
       <div className="card-body">
         <div className="card-title m-auto">
           <SubHeading title={title2} />
