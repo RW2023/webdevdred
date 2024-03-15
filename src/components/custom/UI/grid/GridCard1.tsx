@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react'; // This import is necessary for FC (Function Component) type
 
-import LightSubHeading from '../LightSubHeading';
+import SubHeading from '../LightSubHeading';
 
 interface Props {
   title1: string;
@@ -12,12 +12,12 @@ interface Props {
 
 const GridCard1: FC<Props> = ({ title1, content1, buttonText1, href1 }) => {
   return (
-    <div className="card card-compact bg-base-100 shadow-xl">
+    <div className="bg-base  card shadow-xl">
       <div className="card-body">
         <div className="card-title m-auto">
-          <LightSubHeading title={title1} />
+          <SubHeading title={title1} />
         </div>
-        {content1}
+        <div className="text-base-content">{content1}</div>
         {buttonText1 && href1 && (
           <div className="card-actions justify-end">
             <Link href={href1} passHref>
