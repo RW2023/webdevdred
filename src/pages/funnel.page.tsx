@@ -19,8 +19,7 @@ const FunnelPage = () => {
   );
 };
 
-// Add this if you're using getInitialProps to signal not using the default layout.
-// Note: Using getInitialProps just to disable the default layout might not be the best approach as it disables Automatic Static Optimization.
+// using getInitialProps to signal not using the default layout.
 FunnelPage.getInitialProps = async () => ({
   noDefaultLayout: true,
 });
