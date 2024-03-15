@@ -1,20 +1,25 @@
 import FunnelLayout from '@src/components/custom/funnelLayout';
-import GridContent from '@src/components/custom/UI/grid/GridContent';
+import Grid1Contents from '@src/components/custom/UI/grid/Grid1Contents';
+import Grid2Contents from '@src/components/custom/UI/grid/Grid2Contents';
+import GridContainer from '@src/components/custom/UI/grid/GridContainer';
 import Heading from '@src/components/custom/UI/Heading';
+import Hero from '@src/components/custom/UI/Hero';
 
 const FunnelPage = () => {
   return (
     <FunnelLayout>
-      <div className="text-base-content">
-        <Heading title="testing Headline" />
-        <GridContent
-          pageTitle="testing Page Title"
-          title1="testing Title 1"
-          title2="testing Title 2"
-          content1={<p>testing content 1</p>}
-          content2={<p>testing content 2</p>}
-        />
-      </div>
+      <Hero img="/assets/code.jpg">
+        <div className="text-base-content">
+          <Heading title="testing Headline" />
+          <GridContainer
+            pageTitle="testing Page Title"
+            title1="testing Title 1"
+            title2="testing Title 2"
+            content1={<Grid1Contents />}
+            content2={<Grid2Contents />}
+          />
+        </div>
+      </Hero>
     </FunnelLayout>
   );
 };
