@@ -12,7 +12,7 @@ interface Props {
 
 const GridCard1: FC<Props> = ({ title1, content1, buttonText1, href1 }) => {
   return (
-    <div className="card-compact  bg-base-300 shadow-xl">
+    <div className="card-compact  rounded-md bg-base-300 shadow-xl">
       <div className="card-body">
         <div className="card-title m-auto">
           <SubHeading title={title1} />
