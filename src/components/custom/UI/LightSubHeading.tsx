@@ -18,7 +18,7 @@ const SubHeading: FC<Props> = ({ title, iconClass }): JSX.Element => {
         textShadow: '1px 1px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000',
       }}
     >
-      {iconClass && <i className={`${iconClass} mr-2`}></i>}
+      {iconClass && <i className={`${iconClass} mr-2`} />}
       {titleCaseText}
     </h2>
   );
