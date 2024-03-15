@@ -16,7 +16,7 @@ const Heading: FC<Props> = ({ title, iconClass }): JSX.Element => {
 
   return (
     <h1 className="font-poppins m-2 flex items-center justify-center text-center text-3xl font-bold">
-      {iconClass && <i className={`${iconClass} mr-2`}></i>}
+      {iconClass && <i className={`${iconClass} mr-2`} />}
       {titleCaseText}
     </h1>
   );
