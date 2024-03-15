@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import LightSubHeading from '../LightSubHeading';
+import SubHeading from '../SubHeading';
 import GridCard1 from './GridCard1';
 import GridCard2 from './GridCard2';
 
@@ -29,8 +29,9 @@ const GridContent: FC<Props> = ({
 }): JSX.Element => {
   return (
     <>
-      <div>
-        <LightSubHeading title={pageTitle} />
+      <div className="mx-auto  my-2 w-full rounded bg-base-100 md:w-1/2">
+        {' '}
+        <SubHeading title={pageTitle} />
       </div>
       <div className="m-auto mx-2 my-2 grid gap-4 md:grid-cols-2">
         <GridCard1 title1={title1} content1={content1} buttonText1={buttonText1} href1={href1} />
