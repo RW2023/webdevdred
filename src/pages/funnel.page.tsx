@@ -10,11 +10,13 @@ const FunnelPage = () => {
     <FunnelLayout>
       <Hero img="/assets/code.jpg">
         <div className="text-base-content">
-          <Heading title="testing Headline" />
+          <div className="m-auto w-full rounded bg-base-100 md:w-1/2">
+            <Heading title="W D D" />
+          </div>
           <GridContainer
-            pageTitle="testing Page Title"
-            title1="testing Title 1"
-            title2="testing Title 2"
+            pageTitle="Sign up for my newsletter!"
+            title1="Members Enjoy"
+            title2="Sign Up Now!"
             content1={<Grid1Contents />}
             content2={<Grid2Contents />}
           />
