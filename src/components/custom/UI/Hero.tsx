@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = ({ img, children }) => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="hero-overlay bg-opacity-40" />
+      <div className="hero-overlay bg-opacity-10" />
       <div className="w-full">{children}</div>
     </div>
   );
