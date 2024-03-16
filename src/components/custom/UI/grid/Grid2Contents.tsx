@@ -1,11 +1,11 @@
 import { FC } from 'react';
 
-import Signup from '../../forms/Signup';
+import SystemForm from '@src/components/custom/forms/SystemForm';
 
 interface Props {}
 
 const GridContents: FC<Props> = (): JSX.Element => {
-  return <Signup />;
+  return <SystemForm />;
 };
 
 export default GridContents;
