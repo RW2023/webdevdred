@@ -12,12 +12,11 @@ const FunnelLayout: React.FC<FunnelLayoutProps> = ({ children }) => {
   return (
     <div data-theme="black">
       <Head>
-        <title>Funnel Layout</title>
-        <meta name="description" content="" />
+        <title>Sign Up</title>
+        <meta name="Sign-up Page" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DarkToggle />
-      {/* You can add a custom header, footer, etc., here */}
       <main>{children}</main> {/* Custom footer */}
       <Footer />
     </div>
