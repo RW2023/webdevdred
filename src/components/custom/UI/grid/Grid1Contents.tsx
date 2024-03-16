@@ -8,7 +8,8 @@ const GridContents: FC<Props> = (): JSX.Element => {
       <ul className="list-inside list-disc md:text-lg">
         <li>Exclusive discounts</li>
         <li>Access to member only Resources</li>
-        <li>Weekly Newsletter packed with tips and tricks</li>
+        <li>Weekly Newsletter with tips and tricks</li>
+        <li>Active Community</li>
       </ul>
     </div>
   );
