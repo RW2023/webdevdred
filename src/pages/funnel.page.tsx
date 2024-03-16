@@ -2,7 +2,6 @@ import FunnelLayout from '@src/components/custom/funnelLayout';
 import Grid1Contents from '@src/components/custom/UI/grid/Grid1Contents';
 import Grid2Contents from '@src/components/custom/UI/grid/Grid2Contents';
 import GridContainer from '@src/components/custom/UI/grid/GridContainer';
-// import Heading from '@src/components/custom/UI/Heading';
 import Hero from '@src/components/custom/UI/Hero';
 
 const FunnelPage = () => {
@@ -10,9 +9,6 @@ const FunnelPage = () => {
     <FunnelLayout>
       <Hero img="/assets/code.jpg">
         <div className="text-base-content">
-          <div className="m-auto w-full rounded bg-base-100 md:w-1/2">
-            {/* <Heading title="W D D" /> */}
-          </div>
           <GridContainer
             pageTitle="Sign up for my newsletter!"
             title1="Members Enjoy"
