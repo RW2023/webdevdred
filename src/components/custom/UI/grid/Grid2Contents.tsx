@@ -4,8 +4,8 @@ import SystemForm from '@src/components/custom/forms/SystemForm';
 
 interface Props {}
 
-const GridContents: FC<Props> = (): JSX.Element => {
+const Grid2Contents: FC<Props> = (): JSX.Element => {
   return <SystemForm />;
 };
 
-export default GridContents;
+export default Grid2Contents;
