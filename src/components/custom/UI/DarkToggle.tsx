@@ -24,7 +24,7 @@ const DarkToggle = () => {
   };
 
   return (
-    <label className="flex cursor-pointer items-center gap-2">
+    <label className="flex cursor-pointer items-center gap-2 p-2">
       {/* Your SVG icons here */}
       <span>Dark Mode</span>
       <input
