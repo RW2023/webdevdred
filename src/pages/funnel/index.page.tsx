@@ -1,4 +1,5 @@
-import FunnelLayout from '@src/components/custom/funnelLayout';
+import FunnelLayout from './funnelLayout';
+
 import Grid1Contents from '@src/components/custom/UI/grid/Grid1Contents';
 import Grid2Contents from '@src/components/custom/UI/grid/Grid2Contents';
 import Grid3Contents from '@src/components/custom/UI/grid/Grid3Contents';

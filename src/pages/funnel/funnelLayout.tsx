@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { Footer } from '../templates/footer';
-import DarkToggle from './UI/DarkToggle';
+import DarkToggle from '../../components/custom/UI/DarkToggle';
+import { Footer } from '../../components/templates/footer';
 
 type FunnelLayoutProps = {
   children: React.ReactNode;
