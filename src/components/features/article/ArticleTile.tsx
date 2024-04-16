@@ -22,7 +22,8 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
         className={twMerge(
           'flex flex-1 flex-col overflow-hidden rounded-2xl border border-gray300 shadow-lg',
           className,
-        )}>
+        )}
+      >
         {article.featuredImage && (
           <div {...inspectorProps({ fieldId: 'featuredImage' })}>
             <CtfImage
@@ -33,7 +34,10 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
         )}
         <div className="flex flex-1 flex-col py-3 px-4 md:px-5 md:py-4 lg:px-7 lg:py-5">
           {title && (
-            <p className="h3 mb-2 text-gray800 md:mb-3" {...inspectorProps({ fieldId: 'title' })}>
+            <p
+              className="h3 mb-2 text-base-content md:mb-3"
+              {...inspectorProps({ fieldId: 'title' })}
+            >
               {title}
             </p>
           )}
@@ -42,7 +46,8 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
             <ArticleAuthor article={article} />
             <div
               className={twMerge('ml-auto pl-2 text-xs text-gray600')}
-              {...inspectorProps({ fieldId: 'publishedDate' })}>
+              {...inspectorProps({ fieldId: 'publishedDate' })}
+            >
               <FormatDate date={publishedDate} />
             </div>
           </div>
