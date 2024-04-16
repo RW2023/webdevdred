@@ -5,7 +5,7 @@ interface Props {}
 
 const DarkToggle: FC<Props> = (): JSX.Element => {
   return (
-    <div className="m-2 p-2">
+    <div className="p-2">
       <label className="flex cursor-pointer gap-2">
         {/* Moon SVG */}
         <svg
