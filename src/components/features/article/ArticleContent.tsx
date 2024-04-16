@@ -1,5 +1,6 @@
 import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 
+import SystemForm from '@src/components/custom/forms/SystemForm';
 import { CtfRichText } from '@src/components/features/contentful';
 import { PageBlogPostFieldsFragment } from '@src/lib/__generated/sdk';
 
@@ -13,6 +14,7 @@ export const ArticleContent = ({ article }: ArticleContentProps) => {
   return (
     <div {...inspectorProps({ fieldId: 'content' })}>
       <CtfRichText json={content?.json} links={content?.links} />
+      <SystemForm />
     </div>
   );
 };
