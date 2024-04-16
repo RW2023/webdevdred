@@ -1,5 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
+import DarkToggle from '@src/components/custom/UI/DarkToggle';
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -14,7 +16,8 @@ export default function Document() {
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <body>
+      <DarkToggle />
+      <body className="bg-base-300 text-base-content">
         <Main />
         <NextScript />
       </body>
