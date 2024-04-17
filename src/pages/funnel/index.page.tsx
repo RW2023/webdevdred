@@ -1,10 +1,9 @@
 import SystemForm from '../../components/custom/forms/SystemForm';
 
-
 const FunnelPage = () => {
   return (
     // <Hero img="/assets/code.jpg">
-    <div className="text-base-content container flex flex-1 justify-center items-center">
+    <div className="container flex flex-1 items-center justify-center text-base-content">
       <SystemForm />
     </div>
   );
