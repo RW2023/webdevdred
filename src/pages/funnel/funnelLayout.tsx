@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 
-import DarkToggle from '../../components/custom/UI/DarkToggle';
 import { Footer } from '../../components/templates/footer';
 
 type FunnelLayoutProps = {
@@ -16,7 +15,6 @@ const FunnelLayout: React.FC<FunnelLayoutProps> = ({ children }) => {
         <meta name="Sign-up Page" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <DarkToggle />
       <main>{children}</main> {/* Custom footer */}
       <Footer />
     </div>
