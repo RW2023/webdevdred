@@ -1,5 +1,6 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import { FC } from 'react';
+
 import DarkToggle from './DarkToggle';
 import SubHeading from './SubHeading';
 
@@ -7,18 +8,16 @@ interface Props {}
 
 const Navbar: FC<Props> = (): JSX.Element => {
   return (
-     <nav
-      className="flex items-center justify-end p-4 bg-gray-800 text-white"
+    <nav
+      className="bg-gray-800 text-white flex items-center justify-end p-4"
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
       <div className="flex items-center">
-        <Link href="/"
-          className="text-xl font-semibold mr-6 hover:text-gray-300">
-            <SubHeading title='Home' />
+        <Link href="/" className="hover:text-gray-300 mr-6 text-xl font-semibold">
+          <SubHeading title="Home" />
         </Link>
-        <Link href="/funnel"
-          className="text-xl font-semibold mr-6 hover:text-gray-300">
-            <SubHeading title='subscribe' />
+        <Link href="/funnel" className="hover:text-gray-300 mr-6 text-xl font-semibold">
+          <SubHeading title="subscribe" />
         </Link>
         <DarkToggle />
       </div>
