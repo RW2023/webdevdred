@@ -17,8 +17,9 @@ export default function Document() {
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Navbar />
+
       <body className="bg-base-300 text-base-content">
+        <Navbar />
         <Main />
         <NextScript />
       </body>
