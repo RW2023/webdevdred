@@ -45,7 +45,7 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
           <div className="mt-auto flex items-center">
             <ArticleAuthor article={article} />
             <div
-              className={twMerge('ml-auto pl-2 text-xs text-gray600')}
+              className={twMerge('ml-auto pl-2 text-xs text-base-content')}
               {...inspectorProps({ fieldId: 'publishedDate' })}
             >
               <FormatDate date={publishedDate} />
