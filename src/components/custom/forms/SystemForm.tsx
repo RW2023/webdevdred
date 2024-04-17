@@ -7,11 +7,13 @@ function SubscriptionForm() {
     <div>
       <div className="card my-3 border bg-base-200 p-1">
         <SubHeading title="Subscribe to my newsletter" />
-        <p className="mb-3 text-center">Subscribers:</p>
-        <ul className="m-4 list-inside list-disc">
+        <p className="mb-3 text-center text-success">Subscribers:</p>
+        <ul className="m-4 list-inside list-disc text-lg">
           <li>Get updates on new posts</li>
-          <li>Get exclusive content</li>
-          <li>Get early access to new projects</li>
+          <li>Get exclusive content (video tutorials etc)</li>
+          <li>Get early access to new content</li>
+          <li>Tech tools and associated discounts (ai tools, hosting etc)</li>
+          <li>Access to my beginner friendly discord community</li>
         </ul>
       </div>
       <form
