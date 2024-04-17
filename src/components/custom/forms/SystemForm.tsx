@@ -5,8 +5,15 @@ import SubHeading from '@src/components/custom/UI/SubHeading';
 function SubscriptionForm() {
   return (
     <div>
-      <SubHeading title="Subscribe to our newsletter" />
-      <p className="text-center">Keep up to date with new posts </p>
+      <div className="card my-3 border bg-base-200 p-1">
+        <SubHeading title="Subscribe to my newsletter" />
+        <p className="mb-3 text-center">Subscribers:</p>
+        <ul className="m-4 list-inside list-disc">
+          <li>Get updates on new posts</li>
+          <li>Get exclusive content</li>
+          <li>Get early access to new projects</li>
+        </ul>
+      </div>
       <form
         method="post"
         action="https://systeme.io/embedded/15714774/subscription"
