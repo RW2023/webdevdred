@@ -1,7 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-import Navbar from '@src/components/custom/UI/Navbar';
-
 export default function Document() {
   return (
     <Html lang="en">
@@ -16,7 +14,6 @@ export default function Document() {
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Navbar />
       <body className="bg-base-300 text-base-content">
         <Main />
         <NextScript />
