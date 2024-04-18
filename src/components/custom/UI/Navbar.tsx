@@ -16,7 +16,7 @@ const Navbar: FC<Props> = (): JSX.Element => {
         <Link href="/" className="hover:text-gray-300 mr-6 text-xl font-semibold">
           <SubHeading title="Home" />
         </Link>
-        <Link href="/funnel" className="hover:text-gray-300 mr-6 text-xl font-semibold">
+        <Link href="/signup" className="hover:text-gray-300 mr-6 text-xl font-semibold">
           <SubHeading title="subscribe" />
         </Link>
         <DarkToggle />
