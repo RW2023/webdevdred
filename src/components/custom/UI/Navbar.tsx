@@ -13,9 +13,6 @@ const Navbar: FC<Props> = (): JSX.Element => {
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
       <div className="flex items-center">
-        <Link href="/" className="hover:text-gray-300 mr-6 text-xl font-semibold">
-          <SubHeading title="Home" />
-        </Link>
         <Link href="/signup" className="hover:text-gray-300 mr-6 text-xl font-semibold">
           <SubHeading title="subscribe" />
         </Link>
